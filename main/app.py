@@ -9,9 +9,12 @@ cur = con.cursor()
 
 app = Flask(__name__)
 
-cur.execute("CREATE TABLE Data")
 
+kg_plastic = 1.3
+kg_paper = 3
+co2_plastic_savings = kg_plastic*2
 
+print(str(co2_plastic_savings))
 
 
 
