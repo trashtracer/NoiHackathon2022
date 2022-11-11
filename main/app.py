@@ -13,9 +13,8 @@ app = Flask(__name__)
 kg_plastic = 1.3
 kg_paper = 3
 co2_plastic_savings = kg_plastic*2
-
-print(str(co2_plastic_savings))
-
+co2_paper_savings = kg_paper*0.21
+#cur.execute("INSERT INTO Data(kg_plastic, kg_paper)")
 
 
 
