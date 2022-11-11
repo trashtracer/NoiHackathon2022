@@ -5,21 +5,25 @@
 body {
     background: white;
     font-family: "Open Sans";
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .bold {
     font-weight: bold;
 }
 
+
 .topleft {
-    background-color: rgb(100, 100, 100);
+    backdrop-filter: blur(50px);
     padding: 1.5vw;
     border-radius: 15px;
     position: absolute;
     top: 1vw;
     left: 1vw;
     white-space: nowrap;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
 }
 
 .topleft img {
@@ -38,8 +42,8 @@ body {
     display: inline-block;
 }
 
-.clock {
-    background-color: rgb(100, 100, 100);
+.info {
+    backdrop-filter: blur(50px);
     padding: 1.5vw;
     border-radius: 15px;
     position: absolute;
@@ -51,16 +55,32 @@ body {
 }
 
 .weather {
+    backdrop-filter: blur(50px);
+    padding: 1.5vw;
+    border-radius: 15px;
     position: absolute;
     top: 1vw;
-    left: 1vw;
+    right: 15vw;
     white-space: nowrap;
     font-size: 1.5vw;
+    vertical-align: middle;
 }
 
+.weather p {
+    display: inline-block;
+    color: white;
+    font-size: 4vw;
+    font-weight: bold;
+    padding-left: 1.5vw;
+    vertical-align: middle;
+}
+
+.weather img {
+    display: inline-block;
+}
 .bins {
     position: absolute;
-    background-color: rgb(100, 100, 100);
+    backdrop-filter: blur(50px);
     height: 10vw;
     color: white;
     padding: 1.5vw;
@@ -73,7 +93,7 @@ body {
 
 .data {
     position: absolute;
-    background-color: rgb(100, 100, 100);
+    backdrop-filter: blur(50px);
     color: white;
     padding: 1.5vw;
     border-radius: 15px;

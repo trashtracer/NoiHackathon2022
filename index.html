@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/src/styles/main.css">
     <title>Dashboard</title>
 </head>
-<body>
+<body id="body">
     <div class="topleft">
         <div class="logo">
             <img src="/src/assets/logo.png"></img>
@@ -19,12 +19,14 @@
         </div>
 
     </div>
-    <div class="clock" id="clock">
-        ??:??
-    </div>
     <div class="weather">
-        <!--TODO-->
+        <img src="/src/assets/weather/">
+        <p id="temp">No info</p>
     </div>
+    <div class="info">
+        <p id="clock">??:??</p>
+    </div>
+
     
     <div class="bins">
         <p style="font-size: 4vw; display: inline-block; text-align: center; margin-right: 20vw;"><b style="color: yellow;">Paper</b><br>↓</p>
@@ -33,11 +35,14 @@
     
     <div class="data">
         <p style="font-size: 4vw">Today we've collected a total amount of:<p>
-        <p style="font-size: 2vw; display: inline-block;"><b>3kgs</b> of paper and</p>
-        <p style="font-size: 2vw; display: inline-block;"><b>1kg</b> of plastic</p>
+        <p style="font-size: 2vw; display: inline-block;"><b>-kgs</b> of paper and</p>
+        <p style="font-size: 2vw; display: inline-block;"><b>-kg</b> of plastic</p>
     </div>
     
 </body>
+<script src="/src/scripts/require.js"></script>
+<script src="/src/scripts/bgscrolling.js"></script>
 <script src="/src/scripts/clock.js"></script>
 <script src="/src/scripts/main.js"></script>
+<script src="/src/scripts/weather.js"></script>
 </html>
