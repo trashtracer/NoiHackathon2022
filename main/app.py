@@ -1,7 +1,5 @@
 #importing libraries
 
-
-import serial
 from flask import Flask, jsonify
 
 #Creating sqlite database connection and cursor
@@ -34,6 +32,34 @@ def get_pl_w():
 def get_pa_w():
     return jsonify({"pa_recycle_weight":paper})
 
+async def my_function():
+    
+    import serial
+    import time
+    ser = serial.Serial('COM6', 9600, timeout=1)
+    time.sleep(2)
+    for i in range(50):
+        line = ser.readline()   # read a byte
+        if line:
+            string = line.decode()  # convert the byte string to a unicode string
+            txt = string # convert the unicode string to an int
+    if txt == "plastic":
+        g_plastic = g_plastic + 1
+    else:
+        g_paper = g_paper + 1
+
+    ser.close()
+
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)
+
+
+
+    
+
+
+
+
+
+

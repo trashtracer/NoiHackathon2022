@@ -6,10 +6,11 @@ var plastic;
 var datap;
 var datac;
 
+function addpaper(){
+  paper = paper + 1
+}
 
 setInterval(function() {
-    
-
 //API REQUEST
 $.ajaxSetup({
   async: false
