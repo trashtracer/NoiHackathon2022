@@ -10,11 +10,38 @@ cur = con.cursor()
 app = Flask(__name__)
 
 
-kg_plastic = 1.3
+#sample data
+kg_plastic = 1.4
 kg_paper = 3
+#Co2 Emission Savings
 co2_plastic_savings = kg_plastic*2
 co2_paper_savings = kg_paper*0.21
-#cur.execute("INSERT INTO Data(kg_plastic, kg_paper)")
+
+
+
+while(True):
+    #saving values in sqlite
+    cur.execute("INSERT INTO plastic VALUE(kg_plastic)")
+    con.commit()
+    cur.execute("INSERT INTO paper VALUE(kg_paper)")
+    con.commit()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
