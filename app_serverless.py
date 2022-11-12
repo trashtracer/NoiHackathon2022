@@ -32,9 +32,6 @@ def get_helo():
 def get_pl_w():
     return jsonify({"pl_w":plastic})
     
-
-
-
 @app.route("/api/v1/paper/weight" ,methods=["GET"])
 def get_pa_w():
     return jsonify({"pa_recycle_weight":paper})
