@@ -1,6 +1,6 @@
 #importing libraries
 import sqlite3
-
+import time
 import serial
 from flask import Flask, jsonify
 
@@ -24,6 +24,7 @@ co2_paper_savings = g_paper*0.21
 
 
 cur.executemany("INSERT INTO plastic VALUES (?);", str_g_plastic)
+time.sleep(2)
 cur.executemany("INSERT INTO paper VALUES (?);", str_g_paper)
 con.commit()
 
@@ -32,6 +33,7 @@ con.commit()
 while(True):
     #saving values in sqlite
     cur.executemany("UPDATE plastic SET weight = (?);", str_g_plastic)
+    time.sleep(2)
     cur.executemany("UPDATE paper SET weight = (?);", str_g_paper)
 
     plastic = [{
@@ -40,31 +42,30 @@ while(True):
     {
         "value2":co2_plastic_savings
     }]
-    
+    time.sleep(2)
     paper = [{
         "value1":"cur.executemany(SELECT weight FROM paper)",
     },
     {
         "value2":co2_paper_savings
     }]
-
+    time.sleep(2)
     @app.route("/" ,methods=["GET"])
     def get_helo():
         print("'sup")
-
+    time.sleep(2)
     @app.route("/api/v1/plastic/weight" ,methods=["GET"])
     def get_pl_w():
         return jsonify({"value1":plastic})
-    
-
+    time.sleep(2)
     @app.route("/api/v1/plastic/co2" ,methods=["GET"])
     def get_pl_c():
         return jsonify({"value2":plastic})
-
+    time.sleep(2)
     @app.route("/api/v1/paper/weight" ,methods=["GET"])
     def get_pa_w():
         return jsonify({"value1":paper})
-
+    time.sleep(2)
     @app.route("/api/v1/paper/co2" ,methods=["GET"])
     def get_pa_cp():
         return jsonify({"value2":paper})
