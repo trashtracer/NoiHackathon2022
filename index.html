@@ -20,8 +20,20 @@
 
     </div>
     <div class="weather">
-        <p id="tempemoji">🥶</p>
-        <p id="temp">-°C</p>
+        <p class="toptxt">Now</p>
+        <p id="now-emoji">❓</p>
+        <p id="now">N/A</p>
+    </div>
+
+    <div class="weatherhours">
+        <p class="toptxt">In 3 hours</p>
+        <p id="hour-emoji">❓</p>
+        <p id="hour">N/A</p>
+    </div>
+    <div class="weathertomorrow">
+        <p class="toptxt">Tomorrow</p>
+        <p id="tom-emoji">❓</p>
+        <p id="tom">N/A</p>
     </div>
     <div class="info">
         <p id="clock">??:??</p>
@@ -30,18 +42,19 @@
     
     <div class="bins">
         <p style="font-size: 4vw; display: inline-block; text-align: center; margin-right: 20vw;"><b style="color: yellow;">Paper</b><br>↓</p>
-        <p style="font-size: 4vw; display: inline-block;text-align: center;"><b style="color: rgb(0, 153, 255);">Plastic</b><br>↓</p>
+        <p style="font-size: 4vw; display: inline-block;text-align: center;"><b style="color: rgb(0, 38, 255);">Plastic</b><br>↓</p>
     </div>
     
     <div class="data">
-        <p style="font-size: 4vw">Today we've collected a total amount of:<p>
-        <p style="font-size: 2vw; display: inline-block;"><b>-kgs</b> of paper and</p>
-        <p style="font-size: 2vw; display: inline-block;"><b>-kg</b> of plastic</p>
+        <p style="font-size: 3.5vw">Today we've collected a total amount of:<p>
+        <p style="font-size: 1.5vw; display: inline-block;"><b id="papercount">-kgs</b> of paper and</p>
+        <p style="font-size: 1.5vw; display: inline-block;"><b id="plasticcount">-kg</b> of plastic</p>
     </div>
     
 </body>
 <script src="/src/scripts/require.js"></script>
 <script src="/src/scripts/bgscrolling.js"></script>
+<script src="/src/scripts/values.js"></script>
 <script src="/src/scripts/clock.js"></script>
 <script src="/src/scripts/main.js"></script>
 <script src="/src/scripts/weather.js"></script>

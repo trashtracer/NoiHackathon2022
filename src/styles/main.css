@@ -8,6 +8,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    transition: all 1s;
 }
 
 .bold {
@@ -17,7 +18,7 @@ body {
 
 .topleft {
     backdrop-filter: blur(50px);
-    padding: 1.5vw;
+    padding: 1vw;
     border-radius: 15px;
     position: absolute;
     top: 1vw;
@@ -44,46 +45,124 @@ body {
 
 .info {
     backdrop-filter: blur(50px);
-    padding: 1.5vw;
+    padding: 1vw;
     border-radius: 15px;
     position: absolute;
     top: 1vw;
     right: 1vw;
     color: white;
-    font-size: 4vw;
+    font-size: 3vw;
     font-weight: bold;
 }
 
 .weather {
     backdrop-filter: blur(50px);
-    padding: 1.5vw;
+    padding: 1vw;
     border-radius: 15px;
     position: absolute;
     top: 1vw;
-    right: 15vw;
+    right: 37vw;
     white-space: nowrap;
-    font-size: 1.5vw;
+    font-size: 1vw;
     vertical-align: middle;
 }
-
 .weather p {
     display: inline-block;
     color: white;
-    font-size: 4vw;
+    font-size: 3vw;
     font-weight: bold;
-    padding-left: 1.5vw;
+    padding-left: 0vw;
     vertical-align: middle;
 }
 
-.weather img {
-    display: inline-block;
+.weather .toptxt {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    font-size: 1vw;
+    font-weight: bold;
+    padding-left: 0vw;
+    vertical-align: middle;
 }
+
+.weatherhours {
+    backdrop-filter: blur(50px);
+    padding: 1vw;
+    border-radius: 15px;
+    position: absolute;
+    top: 1vw;
+    right: 24vw;
+    white-space: nowrap;
+    font-size: 1vw;
+    vertical-align: middle;
+}
+
+.weatherhours p {
+    display: inline-block;
+    color: white;
+    font-size: 3vw;
+    font-weight: bold;
+    padding-left: 0vw;
+    vertical-align: middle;
+}
+
+.weatherhours .toptxt {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    font-size: 1vw;
+    font-weight: bold;
+    padding-left: 0vw;
+    vertical-align: middle;
+}
+
+.weathertomorrow {
+    backdrop-filter: blur(50px);
+    padding: 1vw;
+    border-radius: 15px;
+    position: absolute;
+    top: 1vw;
+    right: 11vw;
+    white-space: nowrap;
+    font-size: 1vw;
+    vertical-align: middle;
+}
+
+.weathertomorrow p  {
+display: inline-block;
+color: white;
+font-size: 3vw;
+font-weight: bold;
+padding-left: 0vw;
+vertical-align: middle;
+}
+
+.weathertomorrow .toptxt {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    font-size: 1vw;
+    font-weight: bold;
+    padding-left: 0vw;
+    vertical-align: middle;
+}
+
+
 .bins {
     position: absolute;
     backdrop-filter: blur(50px);
     height: 10vw;
     color: white;
-    padding: 1.5vw;
+    padding: 1vw;
     border-radius: 15px 15px 0px 0px;
     left: 50%;
     bottom: 0;
@@ -95,7 +174,7 @@ body {
     position: absolute;
     backdrop-filter: blur(50px);
     color: white;
-    padding: 1.5vw;
+    padding: 1vw;
     border-radius: 15px;
     left: 50%;
     top: 50%;
