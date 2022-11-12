@@ -19,7 +19,7 @@ body {
 .topleft {
     backdrop-filter: blur(50px);
     padding: 1vw;
-    border-radius: 15px;
+    border-radius: 25px;
     position: absolute;
     top: 1vw;
     left: 1vw;
@@ -33,12 +33,12 @@ body {
     height: 5vw; 
     filter: invert(1);
     vertical-align: middle;
-    animation: rotation 3s infinite ease-in-out; 
+    animation: rotation 4s infinite ease-in-out; 
 }
 
 .topleft .motto {
     vertical-align: middle;
-    padding-right: 0.2vw;
+    padding-left: 0.7vw;
     color: white; 
     display: inline-block;
 }
@@ -46,7 +46,7 @@ body {
 .info {
     backdrop-filter: blur(50px);
     padding: 1vw;
-    border-radius: 15px;
+    border-radius: 25px;
     position: absolute;
     top: 1vw;
     right: 1vw;
@@ -58,7 +58,7 @@ body {
 .weather {
     backdrop-filter: blur(50px);
     padding: 1vw;
-    border-radius: 15px;
+    border-radius: 25px;
     position: absolute;
     top: 1vw;
     right: 37vw;
@@ -91,7 +91,7 @@ body {
 .weatherhours {
     backdrop-filter: blur(50px);
     padding: 1vw;
-    border-radius: 15px;
+    border-radius: 25px;
     position: absolute;
     top: 1vw;
     right: 24vw;
@@ -125,7 +125,7 @@ body {
 .weathertomorrow {
     backdrop-filter: blur(50px);
     padding: 1vw;
-    border-radius: 15px;
+    border-radius: 25px;
     position: absolute;
     top: 1vw;
     right: 11vw;
@@ -160,10 +160,10 @@ vertical-align: middle;
 .bins {
     position: absolute;
     backdrop-filter: blur(50px);
-    height: 10vw;
+    height: 5vw;
     color: white;
     padding: 1vw;
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 25px 25px 0px 0px;
     left: 50%;
     bottom: 0;
     -webkit-transform: translate(-50%);
@@ -172,10 +172,10 @@ vertical-align: middle;
 
 .data {
     position: absolute;
-    backdrop-filter: blur(50px);
+    backdrop-filter: blur(75px);
     color: white;
     padding: 1vw;
-    border-radius: 15px;
+    border-radius: 25px;
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -184,9 +184,9 @@ vertical-align: middle;
 
 @keyframes rotation {
     from {
-      transform: rotate(359deg);
+      transform: rotate(0deg);
     }
     to {
-      transform: rotate(0deg);
+      transform: rotate(359deg);
     }
   }

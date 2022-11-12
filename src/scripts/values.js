@@ -2,20 +2,11 @@ function random(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
   }
 
-var plastic = random(0, 6);
-var paper = random(2, 8);
+var plastic = random(0, 600);
+var paper = random(2, 820);
+var co = Math.round(((3.45 * plastic) + (0.95 * paper)))
 
-if (paper > 1) {
-    kgp = "kgs"
-} else {
-    kgp = "kg"
-}
 
-if (plastic > 1) {
-    kgl = "kgs"
-} else {
-    kgl = "kg"
-}
-
-document.getElementById('papercount').innerHTML = paper + kgp;
-document.getElementById('plasticcount').innerHTML = plastic + kgl;
+document.getElementById('papercount').innerHTML = paper + 'g';
+document.getElementById('plasticcount').innerHTML = plastic + 'g';
+document.getElementById('cocount').innerHTML = co + 'g';
