@@ -22,6 +22,7 @@ str_g_paper = str(g_paper)
 co2_plastic_savings = g_plastic*2
 co2_paper_savings = g_paper*0.21
 
+
 cur.executemany("INSERT INTO plastic VALUES (?);", str_g_plastic)
 cur.executemany("INSERT INTO paper VALUES (?);", str_g_paper)
 con.commit()
