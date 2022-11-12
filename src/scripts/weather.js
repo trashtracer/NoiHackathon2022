@@ -25,22 +25,16 @@ function getnow() {
         let status = data.weather[0].main;
         
         if ((data.weather[0].main).includes('Clear')) {
-            console.log(data.weather[0].main);
             document.getElementById("now-emoji").innerText = "🌞";
         } else if ((data.weather[0].main).includes('Clouds')) {
-            console.log(data.weather[0].main);
             document.getElementById("now-emoji").innerText = "☁️";
-        } else if ((data.weather[0].main).includes('Rain')) {
-            console.log(data.weather[0].main);
+        } else if ((data.weather[0].main).includes('Rain')) {  
             document.getElementById("now-emoji").innerText = "🌧️";
         } else if ((data.weather[0].main).includes('Thunderstorm')) {
-            console.log(data.weather[0].main);
             document.getElementById("now-emoji").innerText = "⛈️";
         } else if ((data.weather[0].main).includes('Snow')) {
-            console.log(data.weather[0].main);
             document.getElementById("now-emoji").innerText = "❄️";
         } else if ((data.weather[0].main).includes('Snow')) {
-            console.log(data.weather[0].main);
             document.getElementById("now-emoji").innerText = "❄️";
         } else if ((data.weather[0].main).includes('Mist')) {
             console.log(data.list[11].weather[0].main);
