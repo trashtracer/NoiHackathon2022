@@ -26,8 +26,7 @@ cur.executemany("INSERT INTO plastic VALUES (?);", str_g_plastic)
 cur.executemany("INSERT INTO paper VALUES (?);", str_g_paper)
 con.commit()
 
-if __name__ == "__main__":
-    app.run(debug=True)
+
 
 while(True):
     #saving values in sqlite
@@ -48,20 +47,27 @@ while(True):
         "value2":co2_paper_savings
     }]
 
+    @app.route("/" ,methods=["GET"])
+    def get_helo():
+        print("'sup")
+
     @app.route("/api/v1/plastic/weight" ,methods=["GET"])
-    def get_plastic_weight():
+    def get_pl_w():
         return jsonify({"value1":plastic})
     
 
     @app.route("/api/v1/plastic/co2" ,methods=["GET"])
-    def get_plastic_co2():
+    def get_pl_c():
         return jsonify({"value2":plastic})
 
     @app.route("/api/v1/paper/weight" ,methods=["GET"])
-    def get_paper_weight():
+    def get_pa_w():
         return jsonify({"value1":paper})
 
     @app.route("/api/v1/paper/co2" ,methods=["GET"])
-    def get_paper_co2():
-        return({"value2":paper})
+    def get_pa_cp():
+        return jsonify({"value2":paper})
+    
 
+    if __name__ == "__main__":
+        app.run(debug=True)
