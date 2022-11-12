@@ -5,10 +5,8 @@ var paper;
 var plastic;
 var datap;
 var datac;
-
-function addpaper(){
-  paper = paper + 1
-}
+var paperadd = 268
+var plasticadd = 432
 
 setInterval(function() {
 //API REQUEST
@@ -24,10 +22,10 @@ $.getJSON('http://127.0.0.1:5000/api/v1/plastic/weight', function(data) {
 
 var paper = (datac.pa_recycle_weight[0].pa_recycle_weight)
 var plastic = (datap.pl_w[0].pl_recycle_weight)
-var co = Math.round(((3.45 * plastic) + (0.95 * paper)))
+var co = Math.round(((3.45 * (plastic + plasticadd)) + (0.95 * (paper + paperadd))))
 
 
-document.getElementById('papercount').innerHTML = paper + 'g';
-document.getElementById('plasticcount').innerHTML = plastic + 'g';
+document.getElementById('papercount').innerHTML = paper + paperadd + 'g';
+document.getElementById('plasticcount').innerHTML = plastic + plasticadd + 'g';
 document.getElementById('cocount').innerHTML = co + 'g';
 }, 200);

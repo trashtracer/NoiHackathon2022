@@ -41,8 +41,16 @@
 
     
     <div class="bins">
-        <p style="font-size: 4vw; display: inline-block; text-align: center; margin-right: 20vw;" onclick="addpaper()"><b style="color: yellow;">Paper</b></p>
-        <p style="font-size: 4vw; display: inline-block;text-align: center;"><b style="color: rgb(0, 38, 255);">Plastic</b></p>
+        <script>
+            function addpaper(){
+                paperadd = paperadd + 10
+            }
+            function addplastic(){
+                plasticadd = plasticadd + 10
+            }
+        </script>
+        <a style="font-size: 4vw; display: inline-block; text-align: center; margin-right: 20vw; cursor: pointer;" onclick="addpaper()" unselectable="on"><b style="color: yellow;">Paper</b></a>
+        <a style="font-size: 4vw; display: inline-block;text-align: center; cursor: pointer;" onclick="addplastic()" unselectable="on"><b style="color: rgb(0, 38, 255);">Plastic</b><a>
     </div>
     
     <div class="data">

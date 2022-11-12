@@ -8,8 +8,8 @@ app = Flask(__name__)
 
 
 #sample data
-g_plastic = 63
-g_paper = 275
+g_plastic = 0
+g_paper = 0
 str_g_plastic = str(g_plastic)
 str_g_paper = str(g_paper)
 
