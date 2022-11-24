@@ -2,7 +2,6 @@
 
 from flask import Flask, jsonify
 
-#Creating sqlite database connection and cursor
 
 app = Flask(__name__)
 
