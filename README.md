@@ -14,3 +14,7 @@ TrashTracer is an innovative project aimed at promoting sustainability by utiliz
 If you want to learn more about TrashTracer and its mission, you can visit our website at [trashtracer.lol](https://trashtracer.lol/). There, you will find more information about the project and the team behind it.
 
 The TrashTracer project is an excellent example of using technology to tackle environmental issues. It shows how creative thinking and innovative solutions can make a positive impact on our planet. So if you're interested in promoting sustainability and want to learn more about TrashTracer, be sure to check out their website.
+
+## Repository structure
+
+- [TrashAPI]() | The REST api to make TrashTracer Work
