@@ -16,7 +16,7 @@ If you want to learn more about TrashTracer and its mission, you can visit our w
 The TrashTracer project is an excellent example of using technology to tackle environmental issues. It shows how creative thinking and innovative solutions can make a positive impact on our planet. So if you're interested in promoting sustainability and want to learn more about TrashTracer, be sure to check out their website.
 
 ## Who is behind this?
-- [SysWhite](https://github.com/SysWhiteDev) | Front/Backend developer
+- [SysWhite](https://github.com/SysWhiteDev) | Frontend/Backend developer
 - [Resonancee](https://github.com/resonanceee) | Backend developer
 - [Peepo]() | Designer
 
