@@ -17,5 +17,5 @@ The TrashTracer project is an excellent example of using technology to tackle en
 
 ## Repository structure
 
-- [TrashAPI](https://github.com/SysWhiteDev/TrashAPI) | The REST API to make TrashTracer Work
-- [TrashWeb](https://github.com/SysWhiteDev/TrashWeb) | The code behind the [web site](https://trashtracer.lol/)
+- [TrashAPI](https://github.com/SysWhiteDev/TrashAPI) | The REST API to make TrashTracer Work.
+- [TrashWeb](https://github.com/SysWhiteDev/TrashWeb) | The code behind the [website](https://trashtracer.lol/).
