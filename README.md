@@ -24,4 +24,4 @@ The TrashTracer project is an excellent example of using technology to tackle en
 
 - [TrashAPI](https://github.com/SysWhiteDev/TrashAPI) | The REST API to make TrashTracer Work.
 - [TrashWeb](https://github.com/SysWhiteDev/TrashWeb) | The code behind the [website](https://trashtracer.lol/).
-- [TTMobile](https://github.com/resonanceee/TTMobile) | The TrashTracer Mobile APP (WIP)
+- [TrashApp](https://github.com/SysWhiteDev/TrashApp) | The TrashTracer Mobile APP (WIP)
