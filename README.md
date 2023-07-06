@@ -17,7 +17,7 @@ The TrashTracer project is an excellent example of using technology to tackle en
 
 ## Who is behind this?
 - [SysWhite](https://github.com/SysWhiteDev) | Frontend/Backend developer
-- [Resonancee](https://github.com/resonanceee) | Backend developer
+- [Resonancee](https://github.com/resonanceee) | Frontend/Backend developer
 - [Peepo]() | Designer
 
 ## Repository structure
